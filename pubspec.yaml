@@ -1,0 +1,54 @@
+name: bahoz_blog
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+dependencies:
+  flutter_svg: ^1.1.6
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    #navbar
+    - images/icons/nav_bar/linear/home.svg
+    - images/icons/nav_bar/linear/explore.svg
+    - images/icons/nav_bar/linear/save.svg
+    - images/icons/nav_bar/linear/profile.svg
+    - images/icons/nav_bar/bold/home.svg
+    - images/icons/nav_bar/bold/explore.svg
+    - images/icons/nav_bar/bold/save.svg
+    - images/icons/nav_bar/bold/profile.svg
+    #appbar
+    - images/icons/app_bar/logo.svg
+    - images/icons/app_bar/notification.svg
+    - images/icons/app_bar/notification_dot.svg
+    #home
+    - images/icons/home/search.svg
+    - images/icons/home/setting.svg
+
+
+  fonts:
+    - family: IranSans-regular
+      fonts:
+        - asset: fonts/IranSans_regular.ttf
+    - family: IranSans-medium
+      fonts:
+        - asset: fonts/IranSans_medium.ttf
+    - family: IranSans-bold
+      fonts:
+        - asset: fonts/ّIranSans_bold.ttf
