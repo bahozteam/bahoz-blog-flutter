@@ -1,6 +1,7 @@
-import 'package:bahoz_blog/screens/home.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
+import '../screens/home.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({super.key});
@@ -14,6 +15,16 @@ class _NavBarState extends State<NavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // شریفی: اپ‌بار خالی
+      appBar: AppBar(
+          backgroundColor: Colors.white,
+          elevation: 0,
+          toolbarHeight: 14,
+          systemOverlayStyle: SystemUiOverlayStyle(
+            statusBarColor: Colors.white,
+            statusBarIconBrightness: Brightness.dark,
+            statusBarBrightness: Brightness.light,
+          )),
       bottomNavigationBar: Container(
         decoration: const BoxDecoration(
           boxShadow: <BoxShadow>[
@@ -34,7 +45,6 @@ class _NavBarState extends State<NavBar> {
             });
           },
           showUnselectedLabels: false,
-          // showSelectedLabels: false, // با آنکامنت کردن این نقطه های زیر نویگیشن باز مخفی میشن
           selectedFontSize: 16,
           selectedItemColor: const Color(0xFF159F91),
           selectedLabelStyle: const TextStyle(fontWeight: FontWeight.w900),
@@ -114,10 +124,3 @@ class _NavBarState extends State<NavBar> {
     );
   }
 }
-
-
-
-
-
-
-

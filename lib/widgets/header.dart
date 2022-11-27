@@ -30,9 +30,10 @@ class _HeaderState extends State<Header> {
           widget.title,
           Spacer(),
           Container(
-              width: 24,
-              height: 24,
-              child: widget.hasNotification ? widget.icon1 : widget.icon2)
+            width: 24,
+            height: 24,
+            child: widget.hasNotification ? widget.icon1 : widget.icon2,
+          )
         ],
       ),
     );
