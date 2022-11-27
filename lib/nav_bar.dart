@@ -1,7 +1,7 @@
-import 'package:bahoz_blog/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
+import '../screens/home.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({super.key});
