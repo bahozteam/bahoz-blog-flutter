@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 //مجیدی:این ویجت برای هدر ها است
@@ -6,7 +8,7 @@ class Header extends StatefulWidget {
   final Widget title;
   final Widget icon1;
   final Widget icon2;
-  final Function buttomClick;
+  final void Function() buttomClick;
   const Header(
       {Key? key,
       required this.hasNotification,
@@ -29,12 +31,45 @@ class _HeaderState extends State<Header> {
         children: [
           widget.title,
           Spacer(),
-          Container(
-              width: 24,
-              height: 24,
-              child: widget.hasNotification ? widget.icon1 : widget.icon2)
+          GestureDetector(
+            onTap: widget.buttomClick,
+            child: Container(
+                width: 24,
+                height: 24,
+                child: widget.hasNotification ? widget.icon1 : widget.icon2),
+          )
         ],
       ),
+    );
+  }
+}
+
+class HeaderTopList extends StatelessWidget {
+  final String text;
+  final void Function() buttomClick;
+  const HeaderTopList({Key? key, required this.text, required this.buttomClick})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Row(
+          children: [
+            Text(
+              this.text,
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            ),
+            Spacer(),
+            Text("دیدن همه", style: TextStyle(fontSize: 15)),
+            SizedBox(width: 2),
+            GestureDetector(
+              onTap: this.buttomClick,
+              child: Icon(Icons.navigate_next_rounded, size: 20),
+            )
+          ],
+        ),
+      ],
     );
   }
 }

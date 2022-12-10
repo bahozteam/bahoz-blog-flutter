@@ -9,16 +9,17 @@ environment:
   sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
-  flutter_svg: ^1.1.6
+  cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
+  flutter_svg: ^1.1.6
+  get: ^4.6.5
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
 
   flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
 
 flutter:
   uses-material-design: true
@@ -40,6 +41,7 @@ flutter:
     #home
     - images/icons/home/search.svg
     - images/icons/home/setting.svg
+    - images/icons/home/read_more.svg
 
   fonts:
     - family: IranSans-regular
