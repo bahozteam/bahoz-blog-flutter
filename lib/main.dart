@@ -11,7 +11,10 @@ class BahozBlog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: 'IranSans-regular'),
+      theme: ThemeData(
+        fontFamily: 'IranSans-regular',
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.teal),
+      ),
       debugShowCheckedModeBanner: false,
       home: const NavBar(),
     );
