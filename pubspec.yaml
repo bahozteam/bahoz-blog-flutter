@@ -10,6 +10,10 @@ environment:
 
 dependencies:
   flutter_svg: ^1.1.6
+  carousel_slider: ^4.1.1
+  dots_indicator: ^2.1.0
+  flutter_spinkit: ^5.1.0
+  auto_size_text: ^3.0.0
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
@@ -40,6 +44,11 @@ flutter:
     #home
     - images/icons/home/search.svg
     - images/icons/home/setting.svg
+    - images/home/noise.png
+    - images/icons/home/save.svg
+    - images/icons/home/saved.svg
+    - images/icons/home/more.svg
+    - images/icons/uc.svg
 
   fonts:
     - family: IranSans-regular

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 //مجیدی:این ویجت برای هدر ها است
 class Header extends StatefulWidget {
@@ -34,6 +35,40 @@ class _HeaderState extends State<Header> {
             height: 24,
             child: widget.hasNotification ? widget.icon1 : widget.icon2,
           )
+        ],
+      ),
+    );
+  }
+}
+
+class TitleOfSections extends StatelessWidget {
+  final String text;
+  final void Function() buttomClick;
+  const TitleOfSections(
+      {Key? key, required this.text, required this.buttomClick})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 28),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Text(
+                this.text,
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+              ),
+              Spacer(),
+              Text("دیدن همه", style: TextStyle(fontSize: 15)),
+              SizedBox(width: 2),
+              GestureDetector(
+                onTap: this.buttomClick,
+                child: SvgPicture.asset('images/icons/home/more.svg', width: 16),
+              )
+            ],
+          ),
         ],
       ),
     );

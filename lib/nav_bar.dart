@@ -15,7 +15,6 @@ class _NavBarState extends State<NavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // شریفی: اپ‌بار خالی
       appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0,
@@ -112,12 +111,75 @@ class _NavBarState extends State<NavBar> {
           const HomeScreen(), // فعلا فقط اسکرین هوم رو قرار دادم
           Container(
             color: Colors.blue[300],
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SvgPicture.asset(
+                    'images/icons/uc.svg',
+                    width: 64,
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    'درحال ساخت...',
+                    textDirection: TextDirection.rtl,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 18,
+                      fontFamily: 'IranSans-bold',
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
           Container(
             color: Colors.green[300],
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SvgPicture.asset(
+                    'images/icons/uc.svg',
+                    width: 64,
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    'درحال ساخت...',
+                    textDirection: TextDirection.rtl,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 18,
+                      fontFamily: 'IranSans-bold',
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
           Container(
             color: Colors.red[300],
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SvgPicture.asset(
+                    'images/icons/uc.svg',
+                    width: 64,
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    'درحال ساخت...',
+                    textDirection: TextDirection.rtl,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 18,
+                      fontFamily: 'IranSans-bold',
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ],
       ),
