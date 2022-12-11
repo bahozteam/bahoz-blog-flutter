@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import '../screens/home.dart';
+import '../screens/explore.dart';
+import '../screens/save.dart';
+import '../screens/profile.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({super.key});
@@ -104,83 +107,13 @@ class _NavBarState extends State<NavBar> {
         ),
       ),
 
-      // بعدا اسکرین های کامل شده در اینجا قرار میگیره
       body: IndexedStack(
         index: _selectedBottonNavItem,
         children: [
-          const HomeScreen(), // فعلا فقط اسکرین هوم رو قرار دادم
-          Container(
-            color: Colors.blue[300],
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SvgPicture.asset(
-                    'assets/icons/uc.svg',
-                    width: 64,
-                  ),
-                  SizedBox(height: 8),
-                  Text(
-                    'درحال ساخت...',
-                    textDirection: TextDirection.rtl,
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18,
-                      fontFamily: 'IranSans-bold',
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Container(
-            color: Colors.green[300],
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SvgPicture.asset(
-                    'assets/icons/uc.svg',
-                    width: 64,
-                  ),
-                  SizedBox(height: 8),
-                  Text(
-                    'درحال ساخت...',
-                    textDirection: TextDirection.rtl,
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18,
-                      fontFamily: 'IranSans-bold',
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Container(
-            color: Colors.red[300],
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SvgPicture.asset(
-                    'assets/icons/uc.svg',
-                    width: 64,
-                  ),
-                  SizedBox(height: 8),
-                  Text(
-                    'درحال ساخت...',
-                    textDirection: TextDirection.rtl,
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18,
-                      fontFamily: 'IranSans-bold',
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
+          HomeScreen(),
+          ExploreScreen(),
+          SaveScreen(),
+          ProfileScreen(),
         ],
       ),
     );
