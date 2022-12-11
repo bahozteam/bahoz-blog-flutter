@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../widgets/w_header.dart';
-import '../widgets/w_inputs.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
