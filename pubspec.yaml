@@ -49,6 +49,12 @@ flutter:
     - images/icons/home/saved.svg
     - images/icons/home/more.svg
     - images/icons/uc.svg
+    #explore
+    - images/explore/logo.svg
+    #saved
+    - images/saved/logo.svg
+    #profile
+    - images/profile/logo.svg
 
   fonts:
     - family: IranSans-regular
