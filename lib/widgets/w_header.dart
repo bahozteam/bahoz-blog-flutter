@@ -65,7 +65,7 @@ class TitleOfSections extends StatelessWidget {
               SizedBox(width: 2),
               GestureDetector(
                 onTap: this.buttomClick,
-                child: SvgPicture.asset('images/icons/home/more.svg', width: 16),
+                child: SvgPicture.asset('assets/icons/icn_home/more.svg', width: 16),
               )
             ],
           ),

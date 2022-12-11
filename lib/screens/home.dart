@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../models/blog_model.dart';
-import '../widgets/inputField.dart';
-import '../widgets/slider.dart';
-import '../widgets/header.dart';
-import '../widgets/list.dart';
+import '../widgets/w_inputs.dart';
+import '../widgets/w_slider.dart';
+import '../widgets/w_header.dart';
+import '../widgets/w_lists.dart';
 
 class HomeScreen extends StatelessWidget {
   static var categorys;
@@ -131,13 +131,13 @@ class HomeScreen extends StatelessWidget {
             child: Header(
               hasNotification: hasNotification,
               title: SvgPicture.asset(
-                'images/icons/app_bar/logo.svg',
+                'assets/icons/icn_appbar/logo.svg',
               ),
               icon1: SvgPicture.asset(
-                'images/icons/app_bar/notification_dot.svg',
+                'assets/icons/icn_appbar/notification_dot.svg',
               ),
               icon2: SvgPicture.asset(
-                'images/icons/app_bar/notification.svg',
+                'assets/icons/icn_appbar/notification.svg',
               ),
               buttomClick: () {},
             ),
@@ -174,7 +174,7 @@ class HomeScreen extends StatelessWidget {
       ),
       child: Padding(
         padding: const EdgeInsets.all(7.5),
-        child: SvgPicture.asset('images/icons/home/setting.svg'),
+        child: SvgPicture.asset('assets/icons/icn_home/setting.svg'),
       ),
     );
   }

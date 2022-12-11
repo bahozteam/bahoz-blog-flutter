@@ -91,7 +91,7 @@ class _BahozSliderState extends State<BahozSlider> {
                         height: 110,
                         width: double.infinity,
                         child: Image.asset(
-                          'images/home/noise.png',
+                          'assets/images/img_home/noise.png',
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -227,8 +227,8 @@ class _GlassSaveButtonState extends State<GlassSaveButton> {
             child: Padding(
               padding: const EdgeInsets.all(6),
               child: isSaved
-                  ? SvgPicture.asset('images/icons/home/saved.svg')
-                  : SvgPicture.asset('images/icons/home/save.svg'),
+                  ? SvgPicture.asset('assets/icons/icn_home/saved.svg')
+                  : SvgPicture.asset('assets/icons/icn_home/save.svg'),
             ),
           ),
         ),

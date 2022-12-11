@@ -1,5 +1,5 @@
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../models/blog_model.dart';
 
@@ -107,7 +107,7 @@ class ColumnListShowItem extends StatelessWidget {
                       ),
                     ),
                     Spacer(),
-                    SvgPicture.asset('images/icons/home/more.svg')
+                    SvgPicture.asset('assets/icons/icn_home/more.svg')
                   ],
                 )
               ],

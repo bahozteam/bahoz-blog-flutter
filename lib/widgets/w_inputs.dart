@@ -21,7 +21,7 @@ class SearchBar extends StatelessWidget {
             hintTextDirection: TextDirection.rtl,
             prefixIcon: Padding(
               padding: const EdgeInsets.all(4),
-              child: SvgPicture.asset('images/icons/home/search.svg'),
+              child: SvgPicture.asset('assets/icons/icn_home/search.svg'),
             ),
             filled: true,
             fillColor: const Color(0xFFEBEBEB),

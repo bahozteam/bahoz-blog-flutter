@@ -1,68 +1,75 @@
 name: bahoz_blog
 description: A new Flutter project.
-
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
-
 version: 1.0.0+1
-
 environment:
   sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
-  flutter_svg: ^1.1.6
-  carousel_slider: ^4.1.1
-  dots_indicator: ^2.1.0
-  flutter_spinkit: ^5.1.0
-  auto_size_text: ^3.0.0
   flutter:
     sdk: flutter
+  flutter_svg: ^1.1.6
+  dots_indicator: ^2.1.0
+  auto_size_text: ^3.0.0
+  flutter_spinkit: ^5.1.0
+  carousel_slider: ^4.1.1
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
 
+
+
   assets:
-    #navbar
-    - images/icons/nav_bar/linear/home.svg
-    - images/icons/nav_bar/linear/explore.svg
-    - images/icons/nav_bar/linear/save.svg
-    - images/icons/nav_bar/linear/profile.svg
-    - images/icons/nav_bar/bold/home.svg
-    - images/icons/nav_bar/bold/explore.svg
-    - images/icons/nav_bar/bold/save.svg
-    - images/icons/nav_bar/bold/profile.svg
-    #appbar
-    - images/icons/app_bar/logo.svg
-    - images/icons/app_bar/notification.svg
-    - images/icons/app_bar/notification_dot.svg
-    #home
-    - images/icons/home/search.svg
-    - images/icons/home/setting.svg
-    - images/home/noise.png
-    - images/icons/home/save.svg
-    - images/icons/home/saved.svg
-    - images/icons/home/more.svg
-    - images/icons/uc.svg
-    #explore
-    - images/explore/logo.svg
-    #saved
-    - images/saved/logo.svg
-    #profile
-    - images/profile/logo.svg
+    # [ Temporary ]:
+    - assets/icons/uc.svg
+
+    # [ NavBar ]:
+    - assets/icons/icn_navbar/linear/home.svg
+    - assets/icons/icn_navbar/bold/home.svg
+    - assets/icons/icn_navbar/linear/explore.svg
+    - assets/icons/icn_navbar/bold/explore.svg
+    - assets/icons/icn_navbar/linear/save.svg
+    - assets/icons/icn_navbar/bold/save.svg
+    - assets/icons/icn_navbar/linear/profile.svg
+    - assets/icons/icn_navbar/bold/profile.svg
+
+    # [ AppBar ]:
+    - assets/icons/icn_appbar/notification_dot.svg
+    - assets/icons/icn_appbar/notification.svg
+    - assets/icons/icn_appbar/logo.svg
+
+    # [ Home ]:
+    - assets/icons/icn_home/setting.svg
+    - assets/icons/icn_home/search.svg
+    - assets/icons/icn_home/saved.svg
+    - assets/icons/icn_home/save.svg
+    - assets/icons/icn_home/more.svg
+    - assets/images/img_home/noise.png
+
+    # [ Explore ]:
+    - assets/images/img_explore/logo.svg
+
+    # [ Saved ]:
+    - assets/images/img_saved/logo.svg
+
+    # [ Profile ]:
+    - assets/images/img_profile/logo.svg
+
+
 
   fonts:
     - family: IranSans-regular
       fonts:
-        - asset: fonts/IranSans_regular.ttf
+        - asset: assets/fonts/IranSans_regular.ttf
     - family: IranSans-medium
       fonts:
-        - asset: fonts/IranSans_medium.ttf
+        - asset: assets/fonts/IranSans_medium.ttf
     - family: IranSans-bold
       fonts:
-        - asset: fonts/ّIranSans_bold.ttf
+        - asset: assets/fonts/IranSans_bold.ttf

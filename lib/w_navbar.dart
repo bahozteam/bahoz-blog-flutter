@@ -52,12 +52,12 @@ class _NavBarState extends State<NavBar> {
               tooltip: 'خانه',
               label: '•',
               icon: SvgPicture.asset(
-                'images/icons/nav_bar/linear/home.svg',
+                'assets/icons/icn_navbar/linear/home.svg',
               ),
               activeIcon: Padding(
                 padding: const EdgeInsets.only(top: 4),
                 child: SvgPicture.asset(
-                  'images/icons/nav_bar/bold/home.svg',
+                  'assets/icons/icn_navbar/bold/home.svg',
                 ),
               ),
             ),
@@ -65,12 +65,12 @@ class _NavBarState extends State<NavBar> {
               tooltip: 'اکسپلور',
               label: '•',
               icon: SvgPicture.asset(
-                'images/icons/nav_bar/linear/explore.svg',
+                'assets/icons/icn_navbar/linear/explore.svg',
               ),
               activeIcon: Padding(
                 padding: const EdgeInsets.only(top: 4),
                 child: SvgPicture.asset(
-                  'images/icons/nav_bar/bold/explore.svg',
+                  'assets/icons/icn_navbar/bold/explore.svg',
                 ),
               ),
             ),
@@ -78,12 +78,12 @@ class _NavBarState extends State<NavBar> {
               tooltip: 'ذخیره شده',
               label: '•',
               icon: SvgPicture.asset(
-                'images/icons/nav_bar/linear/save.svg',
+                'assets/icons/icn_navbar/linear/save.svg',
               ),
               activeIcon: Padding(
                 padding: const EdgeInsets.only(top: 4),
                 child: SvgPicture.asset(
-                  'images/icons/nav_bar/bold/save.svg',
+                  'assets/icons/icn_navbar/bold/save.svg',
                 ),
               ),
             ),
@@ -91,12 +91,12 @@ class _NavBarState extends State<NavBar> {
               tooltip: 'پروفایل',
               label: '•',
               icon: SvgPicture.asset(
-                'images/icons/nav_bar/linear/profile.svg',
+                'assets/icons/icn_navbar/linear/profile.svg',
               ),
               activeIcon: Padding(
                 padding: const EdgeInsets.only(top: 4),
                 child: SvgPicture.asset(
-                  'images/icons/nav_bar/bold/profile.svg',
+                  'assets/icons/icn_navbar/bold/profile.svg',
                 ),
               ),
             ),
@@ -116,7 +116,7 @@ class _NavBarState extends State<NavBar> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SvgPicture.asset(
-                    'images/icons/uc.svg',
+                    'assets/icons/uc.svg',
                     width: 64,
                   ),
                   SizedBox(height: 8),
@@ -140,7 +140,7 @@ class _NavBarState extends State<NavBar> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SvgPicture.asset(
-                    'images/icons/uc.svg',
+                    'assets/icons/uc.svg',
                     width: 64,
                   ),
                   SizedBox(height: 8),
@@ -164,7 +164,7 @@ class _NavBarState extends State<NavBar> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SvgPicture.asset(
-                    'images/icons/uc.svg',
+                    'assets/icons/uc.svg',
                     width: 64,
                   ),
                   SizedBox(height: 8),

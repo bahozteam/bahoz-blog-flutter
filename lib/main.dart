@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../nav_bar.dart';
+import 'w_navbar.dart';
 
 void main() {
   runApp(const BahozBlog());
