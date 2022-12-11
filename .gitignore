@@ -4,6 +4,7 @@
 *.pyc
 *.swp
 .DS_Store
+pubspec.lock
 .atom/
 .buildlog/
 .history
