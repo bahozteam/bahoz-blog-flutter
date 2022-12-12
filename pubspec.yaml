@@ -8,6 +8,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   flutter_svg: ^1.1.6
   dots_indicator: ^2.1.0
   auto_size_text: ^3.0.0
