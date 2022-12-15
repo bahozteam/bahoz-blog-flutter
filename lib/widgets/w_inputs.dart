@@ -15,7 +15,7 @@ class SearchBar extends StatelessWidget {
       child: Container(
         height: 39,
         child: TextField(
-          cursorColor: Color(0xFF159F91),
+          cursorColor: Color(0xFF2E8EFF),
           cursorRadius: Radius.circular(10),
           controller: this.controller,
           onChanged: this.onChanged,
