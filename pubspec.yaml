@@ -34,6 +34,7 @@ flutter:
     # [ General ]:
     - assets/icons/icn_main/sliderhorizontal.svg
     - assets/icons/icn_main/slidervertical.svg
+    - assets/icons/icn_main/draft.svg
 
     # [ NavBar ]:
     - assets/icons/icn_navbar/linear/home.svg
