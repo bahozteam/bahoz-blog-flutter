@@ -5,6 +5,8 @@ class BlogModel {
   final String lastEditDate;
   final String readDuration;
   final String thumbnail;
+  final bool isSaved;
+  final bool isDownloaded;
   BlogModel({
     required this.title,
     required this.thumbnail,
@@ -12,5 +14,7 @@ class BlogModel {
     required this.publishDate,
     required this.lastEditDate,
     required this.readDuration,
+    required this.isSaved,
+    required this.isDownloaded,
   });
 }

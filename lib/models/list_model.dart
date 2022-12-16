@@ -99,6 +99,8 @@ class CustomListItem extends StatelessWidget {
     required this.publishDate,
     required this.lastEditDate,
     required this.readDuration,
+    required this.isSaved,
+    required this.isDownloaded,
   });
 
   final String thumbnail;
@@ -107,6 +109,8 @@ class CustomListItem extends StatelessWidget {
   final String publishDate;
   final String lastEditDate;
   final String readDuration;
+  final bool isSaved;
+  final bool isDownloaded;
 
   get BlogDatas => BlogModel(
         title: title,
@@ -115,6 +119,8 @@ class CustomListItem extends StatelessWidget {
         publishDate: publishDate,
         lastEditDate: lastEditDate,
         readDuration: readDuration,
+        isSaved: isSaved,
+        isDownloaded: isDownloaded,
       );
 
   @override
@@ -199,6 +205,8 @@ class RecommendedPosts extends StatelessWidget {
           publishDate: '۱۲/۴/۲۲',
           readDuration: 'خواندن در ۱۵ دقیقه',
           lastEditDate: '',
+          isSaved: true,
+          isDownloaded: false,
         ),
         CustomListItem(
           thumbnail:
@@ -208,6 +216,8 @@ class RecommendedPosts extends StatelessWidget {
           publishDate: '۱۲/۴/۲۲',
           readDuration: 'خواندن در ۷ دقیقه',
           lastEditDate: '',
+          isSaved: true,
+          isDownloaded: false,
         ),
         CustomListItem(
           thumbnail:
@@ -217,6 +227,8 @@ class RecommendedPosts extends StatelessWidget {
           publishDate: '۱۲/۴/۲۲',
           readDuration: 'خواندن در ۷ دقیقه',
           lastEditDate: '',
+          isSaved: false,
+          isDownloaded: false,
         ),
         CustomListItem(
           thumbnail:
@@ -226,6 +238,8 @@ class RecommendedPosts extends StatelessWidget {
           publishDate: '۱۲/۴/۲۲',
           readDuration: 'خواندن در ۷ دقیقه',
           lastEditDate: '',
+          isSaved: false,
+          isDownloaded: false,
         ),
         CustomListItem(
           thumbnail:
@@ -235,6 +249,8 @@ class RecommendedPosts extends StatelessWidget {
           publishDate: '۱۲/۴/۲۲',
           readDuration: 'خواندن در ۷ دقیقه',
           lastEditDate: '',
+          isSaved: false,
+          isDownloaded: false,
         ),
       ],
     );
