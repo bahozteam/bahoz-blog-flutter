@@ -48,7 +48,7 @@ class _NavBarState extends State<NavBar> {
           },
           showUnselectedLabels: false,
           selectedFontSize: 16,
-          selectedItemColor: const Color(0xFF159F91),
+          selectedItemColor: const Color(0xFF2E8EFF),
           selectedLabelStyle: const TextStyle(fontWeight: FontWeight.w900),
           items: [
             BottomNavigationBarItem(
@@ -106,7 +106,6 @@ class _NavBarState extends State<NavBar> {
           ],
         ),
       ),
-
       body: IndexedStack(
         index: _selectedBottonNavItem,
         children: [
