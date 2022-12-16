@@ -31,6 +31,10 @@ flutter:
     # [ Temporary ]:
     - assets/icons/uc.svg
 
+    # [ General ]:
+    - assets/icons/icn_main/sliderhorizontal.svg
+    - assets/icons/icn_main/slidervertical.svg
+
     # [ NavBar ]:
     - assets/icons/icn_navbar/linear/home.svg
     - assets/icons/icn_navbar/bold/home.svg
