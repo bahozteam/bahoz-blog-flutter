@@ -43,14 +43,23 @@ class _BahozSliderState extends State<BahozSlider> {
                       child: Image.network(
                         SliderModel.items[index].image,
                         fit: BoxFit.cover,
+                        errorBuilder: (context, error, stackTrace) {
+                          return Center(
+                            child: Text(
+                              'بدون اینترنت :/',
+                              style: TextStyle(
+                                fontSize: 14,
+                              ),
+                            ),
+                          );
+                        },
                         loadingBuilder: (BuildContext context, Widget child,
                             ImageChunkEvent? loadingProgress) {
                           if (loadingProgress == null) return child;
                           return Center(
-                            child: SpinKitDualRing(
-                              lineWidth: 3.5,
-                              size: 28.0,
-                              color: Color(0xFF159F91),
+                            child: SpinKitThreeBounce(
+                              size: 24.0,
+                              color: Color(0xFF2E8EFF),
                             ),
                           );
                         },
@@ -176,7 +185,7 @@ class _BahozSliderState extends State<BahozSlider> {
                 size: Size.square(7.0),
                 activeSize: Size.square(7.0),
                 color: Color(0xFFCDCCCD), // Inactive color
-                activeColor: Color(0xFF159F91),
+                activeColor: Color(0xFF2E8EFF),
               ),
             ),
           ),
