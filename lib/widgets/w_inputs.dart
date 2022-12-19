@@ -13,7 +13,7 @@ class SearchBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        height: 39,
+        height: 40,
         child: TextField(
           cursorColor: Color(0xFF2E8EFF),
           cursorRadius: Radius.circular(10),
