@@ -61,12 +61,14 @@ flutter:
 
     # [ Explore ]:
     - assets/images/img_explore/logo.svg
+    - assets/icons/icn_explore/category.svg
 
     # [ Saved ]:
     - assets/images/img_saved/logo.svg
 
     # [ Profile ]:
     - assets/images/img_profile/logo.svg
+    - assets/icons/icn_profile/menu.svg
 
 
 

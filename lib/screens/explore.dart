@@ -31,7 +31,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
                     SizedBox(height: 12),
                     TitleOfSections(
                       text: 'دسته‌بندی ها',
-                      icon: 'assets/icons/icn_main/slidervertical.svg',
+                      icon: 'assets/icons/icn_explore/category.svg',
                     ),
                     SizedBox(height: 14),
                     Categories(),
