@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../screens/home.dart';
-import '../../screens/explore.dart';
-import '../../screens/save.dart';
-import '../../screens/profile.dart';
+import '../screens/home.dart';
+import '../screens/explore.dart';
+import '../screens/save.dart';
+import '../screens/profile.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({super.key});
