@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+
 import '../widgets/w_header.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -29,9 +30,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    //
                     /* محتوای کل این صفحه اینجا بنویس  */
-                    //
                   ],
                 ),
               ),
@@ -48,7 +47,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   // Return Header/AppBar Widget
   Widget getHomeHeader(context, hasNotification, myController) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 28),
+      padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
           Padding(
@@ -58,13 +57,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
               title: SvgPicture.asset(
                 'assets/images/img_profile/logo.svg',
               ),
-              icon1: SvgPicture.asset(
-                'assets/icons/icn_appbar/notification_dot.svg',
-              ),
-              icon2: SvgPicture.asset(
-                'assets/icons/icn_appbar/notification.svg',
-              ),
-              buttomClick: () {},
             ),
           ),
           Container(

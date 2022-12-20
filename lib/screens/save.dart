@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+
+import '../models/list_model.dart';
 import '../widgets/w_header.dart';
 import '../widgets/w_inputs.dart';
 
@@ -26,7 +28,7 @@ class _SaveScreenState extends State<SaveScreen> {
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
-                  children: [],
+                  children: [SizedBox(height: 18), RecommendedPosts()],
                 ),
               ),
             ),
@@ -39,7 +41,7 @@ class _SaveScreenState extends State<SaveScreen> {
   // Return Header/AppBar Widget
   Widget getHomeHeader(context, hasNotification, myController) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 28),
+      padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
           Padding(
@@ -49,13 +51,6 @@ class _SaveScreenState extends State<SaveScreen> {
               title: SvgPicture.asset(
                 'assets/images/img_saved/logo.svg',
               ),
-              icon1: SvgPicture.asset(
-                'assets/icons/icn_appbar/notification_dot.svg',
-              ),
-              icon2: SvgPicture.asset(
-                'assets/icons/icn_appbar/notification.svg',
-              ),
-              buttomClick: () {},
             ),
           ),
           SizedBox(height: 20),
@@ -72,7 +67,7 @@ class _SaveScreenState extends State<SaveScreen> {
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            height: 14,
+            height: 8,
           )
         ],
       ),
