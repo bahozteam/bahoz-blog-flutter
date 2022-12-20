@@ -43,14 +43,23 @@ class _BahozSliderState extends State<BahozSlider> {
                       child: Image.network(
                         SliderModel.items[index].image,
                         fit: BoxFit.cover,
+                        errorBuilder: (context, error, stackTrace) {
+                          return Center(
+                            child: Text(
+                              'بدون اینترنت :/',
+                              style: TextStyle(
+                                fontSize: 14,
+                              ),
+                            ),
+                          );
+                        },
                         loadingBuilder: (BuildContext context, Widget child,
                             ImageChunkEvent? loadingProgress) {
                           if (loadingProgress == null) return child;
                           return Center(
-                            child: SpinKitDualRing(
-                              lineWidth: 3.5,
-                              size: 28.0,
-                              color: Color(0xFF159F91),
+                            child: SpinKitThreeBounce(
+                              size: 24.0,
+                              color: Color(0xFF2E8EFF),
                             ),
                           );
                         },
@@ -91,7 +100,7 @@ class _BahozSliderState extends State<BahozSlider> {
                         height: 110,
                         width: double.infinity,
                         child: Image.asset(
-                          'images/home/noise.png',
+                          'assets/images/img_home/noise.png',
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -176,7 +185,7 @@ class _BahozSliderState extends State<BahozSlider> {
                 size: Size.square(7.0),
                 activeSize: Size.square(7.0),
                 color: Color(0xFFCDCCCD), // Inactive color
-                activeColor: Color(0xFF159F91),
+                activeColor: Color(0xFF2E8EFF),
               ),
             ),
           ),
@@ -227,8 +236,8 @@ class _GlassSaveButtonState extends State<GlassSaveButton> {
             child: Padding(
               padding: const EdgeInsets.all(6),
               child: isSaved
-                  ? SvgPicture.asset('images/icons/home/saved.svg')
-                  : SvgPicture.asset('images/icons/home/save.svg'),
+                  ? SvgPicture.asset('assets/icons/icn_home/saved.svg')
+                  : SvgPicture.asset('assets/icons/icn_home/save.svg'),
             ),
           ),
         ),

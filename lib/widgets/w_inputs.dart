@@ -13,15 +13,17 @@ class SearchBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        height: 39,
+        height: 40,
         child: TextField(
+          cursorColor: Color(0xFF2E8EFF),
+          cursorRadius: Radius.circular(10),
           controller: this.controller,
           onChanged: this.onChanged,
           decoration: InputDecoration(
             hintTextDirection: TextDirection.rtl,
             prefixIcon: Padding(
               padding: const EdgeInsets.all(4),
-              child: SvgPicture.asset('images/icons/home/search.svg'),
+              child: SvgPicture.asset('assets/icons/icn_home/search.svg'),
             ),
             filled: true,
             fillColor: const Color(0xFFEBEBEB),
