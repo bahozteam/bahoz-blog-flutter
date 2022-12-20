@@ -1,3 +1,4 @@
+import 'package:bahoz_blog/widgets/w_categories.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../widgets/w_header.dart';
@@ -26,7 +27,15 @@ class _ExploreScreenState extends State<ExploreScreen> {
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
-                  children: [],
+                  children: [
+                    SizedBox(height: 12),
+                    TitleOfSections(
+                      text: 'دسته‌بندی ها',
+                      icon: 'assets/icons/icn_main/slidervertical.svg',
+                    ),
+                    SizedBox(height: 14),
+                    Categories(),
+                  ],
                 ),
               ),
             ),
@@ -39,7 +48,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
   // Return Header/AppBar Widget
   Widget getHomeHeader(context, hasNotification, myController) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 28),
+      padding: const EdgeInsets.symmetric(horizontal: 24),
       child: Column(
         children: [
           Padding(
@@ -49,13 +58,6 @@ class _ExploreScreenState extends State<ExploreScreen> {
               title: SvgPicture.asset(
                 'assets/images/img_explore/logo.svg',
               ),
-              icon1: SvgPicture.asset(
-                'assets/icons/icn_appbar/notification_dot.svg',
-              ),
-              icon2: SvgPicture.asset(
-                'assets/icons/icn_appbar/notification.svg',
-              ),
-              buttomClick: () {},
             ),
           ),
           SizedBox(height: 20),
@@ -72,7 +74,7 @@ class _ExploreScreenState extends State<ExploreScreen> {
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            height: 14,
+            height: 8,
           )
         ],
       ),
