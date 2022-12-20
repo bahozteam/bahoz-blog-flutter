@@ -56,12 +56,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   SvgPicture.asset('assets/images/img_profile/logo.svg'),
-                  IconButton(
-                    splashRadius: 24,
-                    splashColor: Color(0xFF2E8EFF).withOpacity(0.2),
-                    onPressed: () {},
-                    icon: SvgPicture.asset('assets/icons/icn_profile/menu.svg'),
-                  ),
+                  GestureDetector(
+                    onTap: () {},
+                    child:
+                        SvgPicture.asset('assets/icons/icn_profile/menu.svg'),
+                  )
                 ],
               )),
           Container(
