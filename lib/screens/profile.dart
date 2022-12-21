@@ -206,8 +206,18 @@ class Floating_button extends StatelessWidget {
       ),
       child: Icon(Icons.create),
       onPressed: (() {
-        print('clicked');
+        Creat_post();
       }),
     );
+  }
+}
+
+//Creat Screen for new post
+class Creat_post extends StatelessWidget {
+  const Creat_post({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
   }
 }
