@@ -20,6 +20,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Directionality(
       textDirection: TextDirection.rtl,
       child: Scaffold(
+        floatingActionButton: Floating_button(),
         backgroundColor: Colors.white,
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,20 +35,46 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   children: [
                     Column(
                       children: [
-                        ListTile(
-                          leading: CircleAvatar(
-                            backgroundImage: NetworkImage(
-                                'https://avatars.githubusercontent.com/u/94043228?v=4'),
-                            radius: 30,
-                          ),
-                          title: Padding(
-                            padding: const EdgeInsets.only(bottom: 6.0),
-                            child: Text('پارسا نیک سیرت'),
-                          ),
-                          subtitle: Text('فلاتر دولوپر'),
-                        ),
+                        Row(
+                          children: [
+                            Expanded(
+                              flex: 3,
+                              child: ListTile(
+                                leading: CircleAvatar(
+                                  backgroundImage: NetworkImage(
+                                      'https://avatars.githubusercontent.com/u/94043228?v=4'),
+                                  radius: 30,
+                                ),
+                                title: Padding(
+                                  padding: const EdgeInsets.only(bottom: 6.0),
+                                  child: Text('پارسا نیک سیرت'),
+                                ),
+                                subtitle: Text('توسعه دهنده فلاتر '),
+                              ),
+                            ),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            Expanded(
+                              flex: 2,
+                              child: Container(
+                                width: 90,
+                                height: 40,
+                                child: TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    'ویرایش پروفایل',
+                                    style: TextStyle(fontSize: 15),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        )
+
                         //
                         //
+                        ,
                         SizedBox(
                           height: 12,
                         ),
@@ -162,5 +189,35 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ],
       ),
     );
+  }
+}
+
+//Floating Action Button
+class Floating_button extends StatelessWidget {
+  const Floating_button({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return FloatingActionButton(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(
+          Radius.circular(16.0),
+        ),
+      ),
+      child: Icon(Icons.create),
+      onPressed: (() {
+        Creat_post();
+      }),
+    );
+  }
+}
+
+//Creat Screen for new post
+class Creat_post extends StatelessWidget {
+  const Creat_post({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
   }
 }

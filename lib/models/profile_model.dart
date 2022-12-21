@@ -293,7 +293,7 @@ class Profile_drawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Colors.amber,
+      backgroundColor: Color.fromARGB(207, 255, 255, 255),
     );
   }
 }
