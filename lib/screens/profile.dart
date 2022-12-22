@@ -38,7 +38,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         Row(
                           children: [
                             Expanded(
-                              flex: 3,
+                              flex: 6,
                               child: ListTile(
                                 leading: CircleAvatar(
                                   backgroundImage: NetworkImage(
@@ -56,17 +56,30 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               width: 20,
                             ),
                             Expanded(
-                              flex: 2,
+                              flex: 3,
                               child: Container(
+                                decoration: BoxDecoration(
+                                  border:
+                                      Border.all(color: Colors.blue, width: 2),
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(18),
+                                  ),
+                                ),
                                 width: 90,
                                 height: 40,
                                 child: TextButton(
                                   onPressed: () {},
                                   child: Text(
                                     'ویرایش پروفایل',
-                                    style: TextStyle(fontSize: 15),
+                                    style: TextStyle(fontSize: 14),
                                   ),
                                 ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 1,
+                              child: SizedBox(
+                                width: 0,
                               ),
                             ),
                           ],
