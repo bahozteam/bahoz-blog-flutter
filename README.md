@@ -1,2 +1,2 @@
 # BahozBlog-flutter
-This repository is for the Mobile Client of BahozBlog project
+This repository is made with Flutter for the BahozBlog mobile app project
